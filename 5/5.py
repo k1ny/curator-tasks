@@ -12,6 +12,6 @@ for i in range(1, len(s)):
     else:
         k = 1
 
-for i, cnt in enumerate(mas, ord("0")):
-    if cnt == max(mas):
-        print(chr(i), cnt, end=" ")
+for i in range(len(mas)):
+    if mas[i] == max(mas):
+        print(chr(i + ord("0")), mas[i], end=" ")
